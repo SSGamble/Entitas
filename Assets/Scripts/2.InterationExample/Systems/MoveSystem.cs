@@ -29,7 +29,7 @@ namespace InterationExample {
 
         protected override void Execute(List<GameEntity> entities) {
             foreach (GameEntity entity in entities) {
-                entity.interationExampleView.viewTrans.DOMove(entity.interationExampleMove.targetPos, 3);
+                entity.interationExampleView.viewTrans.DOMove(entity.interationExampleMove.targetPos, 1);
             }
         }
     }
