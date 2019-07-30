@@ -221,6 +221,33 @@
     <Reference Include="UnityEngine.SpatialTracking">
       <HintPath>D:/Unity/2017.3.1p4/Editor/Data/UnityExtensions/Unity/UnitySpatialTracking/RuntimeEditor/UnityEngine.SpatialTracking.dll</HintPath>
     </Reference>
+    <Reference Include="DOTween">
+      <HintPath>Assets/Demigiant/DOTween/DOTween.dll</HintPath>
+    </Reference>
+    <Reference Include="DesperateDevs.Logging">
+      <HintPath>Assets/DesperateDevs/DesperateDevs.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="DesperateDevs.Networking">
+      <HintPath>Assets/DesperateDevs/DesperateDevs.Networking.dll</HintPath>
+    </Reference>
+    <Reference Include="DesperateDevs.Serialization">
+      <HintPath>Assets/DesperateDevs/DesperateDevs.Serialization.dll</HintPath>
+    </Reference>
+    <Reference Include="DesperateDevs.Utils">
+      <HintPath>Assets/DesperateDevs/DesperateDevs.Utils.dll</HintPath>
+    </Reference>
+    <Reference Include="Entitas.CodeGeneration.Attributes">
+      <HintPath>Assets/Entitas/Entitas.CodeGeneration.Attributes.dll</HintPath>
+    </Reference>
+    <Reference Include="Entitas">
+      <HintPath>Assets/Entitas/Entitas.dll</HintPath>
+    </Reference>
+    <Reference Include="Entitas.Unity">
+      <HintPath>Assets/Entitas/Entitas.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="Entitas.VisualDebugging.Unity">
+      <HintPath>Assets/Entitas/Entitas.VisualDebugging.Unity.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEngine.Advertisements">
       <HintPath>C:/ProgramData/Unity/cache/packages/packages.unity.com/com.unity.ads@2.0.3/UnityEngine.Advertisements.dll</HintPath>
     </Reference>
@@ -232,33 +259,6 @@
     </Reference>
     <Reference Include="UnityEngine.StandardEvents">
       <HintPath>C:/ProgramData/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.10/UnityEngine.StandardEvents.dll</HintPath>
-    </Reference>
-    <Reference Include="Entitas">
-      <HintPath>Assets/Entitas/Entitas.dll</HintPath>
-    </Reference>
-    <Reference Include="Entitas.Unity">
-      <HintPath>Assets/Entitas/Entitas.Unity.dll</HintPath>
-    </Reference>
-    <Reference Include="Entitas.VisualDebugging.Unity">
-      <HintPath>Assets/Entitas/Entitas.VisualDebugging.Unity.dll</HintPath>
-    </Reference>
-    <Reference Include="DesperateDevs.Logging">
-      <HintPath>Assets/DesperateDevs/DesperateDevs.Logging.dll</HintPath>
-    </Reference>
-    <Reference Include="Entitas.CodeGeneration.Attributes">
-      <HintPath>Assets/Entitas/Entitas.CodeGeneration.Attributes.dll</HintPath>
-    </Reference>
-    <Reference Include="DesperateDevs.Serialization">
-      <HintPath>Assets/DesperateDevs/DesperateDevs.Serialization.dll</HintPath>
-    </Reference>
-    <Reference Include="DesperateDevs.Utils">
-      <HintPath>Assets/DesperateDevs/DesperateDevs.Utils.dll</HintPath>
-    </Reference>
-    <Reference Include="DesperateDevs.Networking">
-      <HintPath>Assets/DesperateDevs/DesperateDevs.Networking.dll</HintPath>
-    </Reference>
-    <Reference Include="DOTween">
-      <HintPath>Assets/Demigiant/DOTween/DOTween.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>
@@ -294,8 +294,22 @@
     <Compile Include="Assets\Scripts\2.InterationExample\Systems\PositionSystem.cs" />
     <Compile Include="Assets\Scripts\2.InterationExample\Systems\RenderSpriteSystem.cs" />
     <Compile Include="Assets\Scripts\2.InterationExample\Systems\StartMoveSystem.cs" />
+    <Compile Include="Assets\Scripts\3.MultiReactive\Components\Components.cs" />
+    <Compile Include="Assets\Scripts\3.MultiReactive\Controller\GameController.cs" />
+    <Compile Include="Assets\Scripts\3.MultiReactive\Controller\InpputController.cs" />
+    <Compile Include="Assets\Scripts\3.MultiReactive\Feature\MultiFeature.cs" />
+    <Compile Include="Assets\Scripts\3.MultiReactive\Systems\MultDestroySystem.cs" />
+    <Compile Include="Assets\Scripts\3.MultiReactive\Systems\MultiViewSystem.cs" />
+    <Compile Include="Assets\Scripts\3.MultiReactive\Systems\NameSystem.cs" />
+    <Compile Include="Assets\Scripts\3.MultiReactive\View\TestView.cs" />
     <Compile Include="Assets\Scripts\Const\Enums.cs" />
+    <Compile Include="Assets\Scripts\Generated\Components\Interfaces\IMultiReactiveDestroyedEntity.cs" />
+    <Compile Include="Assets\Scripts\Generated\Components\Interfaces\IMultiReactiveViewEntity.cs" />
     <Compile Include="Assets\Scripts\Generated\Contexts.cs" />
+    <Compile Include="Assets\Scripts\Generated\Events\Components\MultiReactiveNameListenerComponent.cs" />
+    <Compile Include="Assets\Scripts\Generated\Events\GameEventSystems.cs" />
+    <Compile Include="Assets\Scripts\Generated\Events\Interfaces\IMultiReactiveNameListener.cs" />
+    <Compile Include="Assets\Scripts\Generated\Events\Systems\MultiReactiveNameEventSystem.cs" />
     <Compile Include="Assets\Scripts\Generated\Feature.cs" />
     <Compile Include="Assets\Scripts\Generated\Game\Components\GameHelloWorldLogComponent.cs" />
     <Compile Include="Assets\Scripts\Generated\Game\Components\GameInterationExampleDirectionComponent.cs" />
@@ -304,17 +318,30 @@
     <Compile Include="Assets\Scripts\Generated\Game\Components\GameInterationExamplePositionComponent.cs" />
     <Compile Include="Assets\Scripts\Generated\Game\Components\GameInterationExampleSpriteComponent.cs" />
     <Compile Include="Assets\Scripts\Generated\Game\Components\GameInterationExampleViewComponent.cs" />
+    <Compile Include="Assets\Scripts\Generated\Game\Components\GameMultiReactiveDestroyedComponent.cs" />
+    <Compile Include="Assets\Scripts\Generated\Game\Components\GameMultiReactiveNameComponent.cs" />
+    <Compile Include="Assets\Scripts\Generated\Game\Components\GameMultiReactiveNameListenerComponent.cs" />
+    <Compile Include="Assets\Scripts\Generated\Game\Components\GameMultiReactiveViewComponent.cs" />
     <Compile Include="Assets\Scripts\Generated\Game\GameAttribute.cs" />
     <Compile Include="Assets\Scripts\Generated\Game\GameComponentsLookup.cs" />
     <Compile Include="Assets\Scripts\Generated\Game\GameContext.cs" />
     <Compile Include="Assets\Scripts\Generated\Game\GameEntity.cs" />
     <Compile Include="Assets\Scripts\Generated\Game\GameMatcher.cs" />
     <Compile Include="Assets\Scripts\Generated\Input\Components\InputInterationExampleMouseComponent.cs" />
+    <Compile Include="Assets\Scripts\Generated\Input\Components\InputMultiReactiveDestroyedComponent.cs" />
+    <Compile Include="Assets\Scripts\Generated\Input\Components\InputMultiReactiveViewComponent.cs" />
     <Compile Include="Assets\Scripts\Generated\Input\InputAttribute.cs" />
     <Compile Include="Assets\Scripts\Generated\Input\InputComponentsLookup.cs" />
     <Compile Include="Assets\Scripts\Generated\Input\InputContext.cs" />
     <Compile Include="Assets\Scripts\Generated\Input\InputEntity.cs" />
     <Compile Include="Assets\Scripts\Generated\Input\InputMatcher.cs" />
+    <Compile Include="Assets\Scripts\Generated\UI\Components\UIMultiReactiveDestroyedComponent.cs" />
+    <Compile Include="Assets\Scripts\Generated\UI\Components\UIMultiReactiveViewComponent.cs" />
+    <Compile Include="Assets\Scripts\Generated\UI\UIAttribute.cs" />
+    <Compile Include="Assets\Scripts\Generated\UI\UIComponentsLookup.cs" />
+    <Compile Include="Assets\Scripts\Generated\UI\UIContext.cs" />
+    <Compile Include="Assets\Scripts\Generated\UI\UIEntity.cs" />
+    <Compile Include="Assets\Scripts\Generated\UI\UIMatcher.cs" />
     <Compile Include="Assets\Scripts\Test.cs" />
   </ItemGroup>
   <ItemGroup>

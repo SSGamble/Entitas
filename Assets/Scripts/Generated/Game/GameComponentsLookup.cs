@@ -15,8 +15,12 @@ public static class GameComponentsLookup {
     public const int InterationExamplePosition = 4;
     public const int InterationExampleSprite = 5;
     public const int InterationExampleView = 6;
+    public const int MultiReactiveDestroyed = 7;
+    public const int MultiReactiveName = 8;
+    public const int MultiReactiveView = 9;
+    public const int MultiReactiveNameListener = 10;
 
-    public const int TotalComponents = 7;
+    public const int TotalComponents = 11;
 
     public static readonly string[] componentNames = {
         "HelloWorldLog",
@@ -25,7 +29,11 @@ public static class GameComponentsLookup {
         "InterationExampleMove",
         "InterationExamplePosition",
         "InterationExampleSprite",
-        "InterationExampleView"
+        "InterationExampleView",
+        "MultiReactiveDestroyed",
+        "MultiReactiveName",
+        "MultiReactiveView",
+        "MultiReactiveNameListener"
     };
 
     public static readonly System.Type[] componentTypes = {
@@ -35,6 +43,10 @@ public static class GameComponentsLookup {
         typeof(InterationExample.MoveComponent),
         typeof(InterationExample.PositionComponent),
         typeof(InterationExample.SpriteComponent),
-        typeof(InterationExample.ViewComponent)
+        typeof(InterationExample.ViewComponent),
+        typeof(MultiReactive.DestroyedComponent),
+        typeof(MultiReactive.NameComponent),
+        typeof(MultiReactive.ViewComponent),
+        typeof(MultiReactiveNameListenerComponent)
     };
 }
